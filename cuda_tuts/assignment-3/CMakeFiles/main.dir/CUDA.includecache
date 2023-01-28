@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/bhagyasyam/exp_tut/cuda_tuts/assignment-3/coalascing.cu
+cuda.h
+-
+stdio.h
+-
+timer.h
+/home/bhagyasyam/exp_tut/cuda_tuts/assignment-3/timer.h
+
+/home/bhagyasyam/exp_tut/cuda_tuts/assignment-3/timer.h
+sys/time.h
+-
+cuda_runtime.h
+-
+

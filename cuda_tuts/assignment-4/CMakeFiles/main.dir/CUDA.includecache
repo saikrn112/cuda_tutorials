@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/bhagyasyam/exp_tut/cuda_tuts/assignment-4/src/main.cu
+thrust/host_vector.h
+-
+thrust/device_vector.h
+-
+thrust/device_vector.h
+-
+thrust/for_each.h
+-
+thrust/tuple.h
+-
+thrust/iterator/counting_iterator.h
+-
+thrust/sequence.h
+-
+thrust/sort.h
+-
+thrust/execution_policy.h
+-
+fstream
+-
+iostream
+-
+vector
+-
+
