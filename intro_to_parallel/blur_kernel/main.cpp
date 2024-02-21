@@ -105,10 +105,10 @@ int main(int argc, char **argv) {
                        numRows(), numCols(),
                        h_filter, filterWidth);
 
-  postProcess(reference_file, h_outputImageRGBA);
+  // postProcess(reference_file, h_outputImageRGBA);
 
     //  Cheater easy way with OpenCV
-    // generateReferenceImage(input_file, reference_file, filterWidth);
+  generateReferenceImage(input_file, reference_file, filterWidth);
 
   compareImages(reference_file, output_file, useEpsCheck, perPixelError, globalError);
 

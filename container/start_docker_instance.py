@@ -7,7 +7,7 @@ import docker
 #below commands are from document https://docker-py.readthedocs.io/en/stable/containers.html
 ENV_HOME = os.environ["HOME"]
 ENV_USER = os.environ["USER"]
-ENV_DISPLAU = None
+ENV_DISPLAY = None
 if "DISPLAY" in os.environ:
     ENV_DISPLAY = os.environ["DISPLAY"]
 
@@ -31,7 +31,8 @@ def create_docker_instance(name,args):
     elif platform == "linux" or platform == "linux2":
         optical_volume = f"{ENV_HOME}/ramana/"
 
-    cmd= f"docker run --name {name} {options} -v {optical_volume}:/root/optical/ somidi/tf:v1 /usr/bin/zsh"
+    cmd= f"docker run --name {name} {options} -v {optical_volume}:/root/optical/ somidi/cuda:v2 /usr/bin/zsh"
+    #cmd= f"docker run --name {name} {options} -v {optical_volume}:/root/optical/ colmap/colmap:latest bash"
     print(cmd)
     if not args.dry_run:
         os.system(cmd)

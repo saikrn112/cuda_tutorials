@@ -1,2 +1,2 @@
-docker build -t somidi/tf:v1 .
+docker build -t somidi/cuda:v1 .
 
